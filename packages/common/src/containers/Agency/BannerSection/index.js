@@ -6,7 +6,7 @@ import Heading from 'reusecore/src/elements/Heading';
 import Button from 'reusecore/src/elements/Button';
 import FeatureBlock from '../../../components/FeatureBlock';
 import Container from '../../../components/UI/Container';
-import Particles from '../../Agency/Particle';
+import Particles from '../Particle';
 import BannerWrapper, { DiscountLabel } from './bannerSection.style';
 
 const BannerSection = ({
@@ -88,14 +88,14 @@ BannerSection.defaultProps = {
   title: {
     fontSize: ['26px', '34px', '42px', '55px'],
     fontWeight: '300',
-    color: '#0f2137',
+    color: '#FFFFFF',
     letterSpacing: '-0.025em',
     mb: ['20px', '25px'],
     lineHeight: '1.31',
   },
   description: {
     fontSize: '16px',
-    color: '#343d48cc',
+    color: '#FFFFFF',
     lineHeight: '2.1',
     mb: '0',
   },

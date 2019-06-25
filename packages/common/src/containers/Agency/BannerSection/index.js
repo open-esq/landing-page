@@ -21,35 +21,29 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="LEARN MORE" {...btnStyle} />
       <Button
-        title="WATCH WORKS"
-        variant="textButton"
+        title="VIEW PROJECTS"
         icon={<i className="flaticon-next" />}
-        {...outlineBtnStyle}
+        {...btnStyle}
       />
     </Fragment>
   );
   return (
-    <BannerWrapper>
+    <BannerWrapper id="banner_section">
       <Particles />
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col}>
-            <DiscountLabel>
-              <Text content="25% Discount" {...discountAmount} />
-              <Text content="on every first project budget" {...discountText} />
-            </DiscountLabel>
             <FeatureBlock
               title={
                 <Heading
-                  content="With Knowledge, Passion, Heart & Soul Agencies"
+                  content="Enabling The Next Generation of Legal Services"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly ."
+                  content="We're a group of legal engineers building legal solutions on the Ethereum Blockchain. It's time to cut the bloat and see how we're shaking up the legal industry."
                   {...description}
                 />
               }
@@ -108,7 +102,7 @@ BannerSection.defaultProps = {
     minWidth: ['130px', '156px'],
     fontSize: '14px',
     fontWeight: '500',
-    color: '#0f2137',
+    color: 'white',
     p: '5px 10px',
   },
   discountAmount: {

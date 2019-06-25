@@ -21,7 +21,7 @@ const FeatureSection = ({
   blockWrapperStyle,
 }) => {
   return (
-    <FeatureSectionWrapper id="featureSection">
+    <FeatureSectionWrapper id="feature_section">
       <Container>
         <Box {...sectionHeader}>
           <Text content="OUR SERVICES" {...sectionSubTitle} />

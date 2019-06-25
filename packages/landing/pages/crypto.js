@@ -9,7 +9,7 @@ import {
   ContentWrapper,
 } from 'common/src/containers/Crypto/crypto.style';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import Navbar from 'common/src/containers/Crypto/Navbar';
+import Navbar from 'common/src/containers/SaasTwo/Navbar';
 import Banner from 'common/src/containers/Crypto/BannerSection';
 import BannerSlider from 'common/src/containers/Crypto/BannerSlider';
 import Transactions from 'common/src/containers/Crypto/Transaction';

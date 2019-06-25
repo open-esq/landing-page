@@ -13,7 +13,7 @@ const colors = {
   borderColor: '#dadada',
   black: '#000000',
   white: '#ffffff',
-  primary: '#10ac84',
+  primary: '#e5bd00',
   headingColor: '#0f2137',
   quoteText: '#343d48',
   textColor: 'rgba(52, 61, 72, 0.8)',

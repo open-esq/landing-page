@@ -1,85 +1,23 @@
 import React, { useContext } from 'react';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
-import { openModal, closeModal } from '@redq/reuse-modal';
 import NavbarWrapper from 'reusecore/src/elements/Navbar';
 import Drawer from 'reusecore/src/elements/Drawer';
 import Button from 'reusecore/src/elements/Button';
 import Logo from 'reusecore/src/elements/UI/Logo';
+import Box from 'reusecore/src/elements/Box';
 import HamburgMenu from '../../../components/HamburgMenu';
-import ScrollSpyMenu from '../../../components/ScrollSpyMenu';
-import { Container } from './navbar.style';
-import SearchPanel from '../SearchPanel';
-import LoginModal from '../LoginModal';
-import CopyrightSection from '../CopyrightsSection';
-
-import LogoImage from '../../../assets/image/agency/logo.png';
-
+import Container from '../../../components/UI/Container';
 import { DrawerContext } from '../../../contexts/DrawerContext';
 
-import data from '../../../data/Agency/';
+import { MENU_ITEMS } from '../../../data/SaasTwo';
+import ScrollSpyMenu from '../../../components/ScrollSpyMenu';
 
-// Default close button for modal
-const CloseModalButton = () => (
-  <Button
-    className="modalCloseBtn"
-    variant="fab"
-    onClick={() => closeModal()}
-    icon={<i className="flaticon-plus-symbol" />}
-  />
-);
+import LogoImage from '../../../assets/image/saasTwo/logo-white.png';
+import LogoImageAlt from '../../../assets/image/saasTwo/logo.png';
 
-// Alt close button for modal
-const CloseModalButtonAlt = () => (
-  <Button
-    className="modalCloseBtn alt"
-    variant="fab"
-    onClick={() => closeModal()}
-    icon={<i className="flaticon-plus-symbol" />}
-  />
-);
-
-const Navbar = ({ navbarStyle, logoStyle }) => {
+const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const { state, dispatch } = useContext(DrawerContext);
-
-  // Search modal handler
-  const handleSearchModal = () => {
-    openModal({
-      config: {
-        className: 'search-modal',
-        disableDragging: true,
-        default: {
-          width: '100%',
-          height: '100%',
-          x: 0,
-          y: 0,
-        },
-      },
-      component: SearchPanel,
-      componentProps: {},
-      closeComponent: CloseModalButtonAlt,
-      closeOnClickOutside: false,
-    });
-  };
-
-  // Authentication modal handler
-  const handleLoginModal = () => {
-    openModal({
-      config: {
-        className: 'login-modal',
-        disableDragging: true,
-        default: {
-          width: '100%',
-          height: '100%',
-          x: 0,
-          y: 0,
-        },
-      },
-      component: LoginModal,
-      componentProps: {},
-      closeComponent: CloseModalButton,
-      closeOnClickOutside: false,
-    });
-  };
 
   // Toggle drawer
   const toggleHandler = () => {
@@ -89,60 +27,94 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   };
 
   return (
-    <NavbarWrapper {...navbarStyle}>
+    <NavbarWrapper {...navbarStyle} className="saas_navbar">
       <Container>
-        <Logo
-          href="#"
-          logoSrc={LogoImage}
-          title="Agency"
-          logoStyle={logoStyle}
-        />
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Button
-            variant="textButton"
-            onClick={handleSearchModal}
-            icon={<i className="flaticon-magnifying-glass" />}
+        <Box {...row}>
+          <Logo
+            href="#"
+            title="Open Esquire"
+            logoStyle={logoStyle}
+            className="main-logo"
           />
-          <Button
-            variant="textButton"
-            onClick={handleLoginModal}
-            icon={<i className="flaticon-user" />}
+          <Logo
+            href="#"
+            title="Open Esquire"
+            logoStyle={logoStyle}
+            className="logo-alt"
           />
-          <Drawer
-            width="420px"
-            placement="right"
-            drawerHandler={<HamburgMenu />}
-            open={state.isOpen}
-            toggleHandler={toggleHandler}
-          >
+          <Box {...menuWrapper}>
             <ScrollSpyMenu
-              menuItems={data.menuItems}
-              drawerClose={true}
-              offset={-100}
+              className="main_menu"
+              menuItems={MENU_ITEMS}
+              offset={-70}
             />
-            <CopyrightSection />
-          </Drawer>
-        </div>
+            <Link href="#">
+              <a className="navbar_button">
+                <Button {...button} title="GET STARTED" />
+              </a>
+            </Link>
+            <Drawer
+              width="420px"
+              placement="right"
+              drawerHandler={<HamburgMenu barColor="#fff" />}
+              open={state.isOpen}
+              toggleHandler={toggleHandler}
+            >
+              <ScrollSpyMenu
+                className="mobile_menu"
+                menuItems={MENU_ITEMS}
+                drawerClose={true}
+                offset={-100}
+              />
+              <Link href="#">
+                <a className="navbar_drawer_button">
+                  <Button {...button} title="GET STARTED" />
+                </a>
+              </Link>
+            </Drawer>
+          </Box>
+        </Box>
       </Container>
     </NavbarWrapper>
   );
 };
 
-// Navbar style props
 Navbar.propTypes = {
   navbarStyle: PropTypes.object,
   logoStyle: PropTypes.object,
+  button: PropTypes.object,
+  row: PropTypes.object,
+  menuWrapper: PropTypes.object,
 };
 
 Navbar.defaultProps = {
-  // Default navbar style
   navbarStyle: {
     minHeight: '70px',
+    display: 'block',
   },
-  // Default logo size
+  row: {
+    flexBox: true,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+  },
   logoStyle: {
-    width: '128px',
-    height: 'auto',
+    maxWidth: ['120px', '130px'],
+  },
+  button: {
+    type: 'button',
+    fontSize: '13px',
+    fontWeight: '700',
+    borderRadius: '4px',
+    pl: '15px',
+    pr: '15px',
+    colors: 'primary',
+    minHeight: 'auto',
+    height: '40px',
+  },
+  menuWrapper: {
+    flexBox: true,
+    alignItems: 'center',
   },
 };
 

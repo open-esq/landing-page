@@ -176,15 +176,101 @@ const AgencyWrapper = styled.div`
     }
   }
   .sticky-nav-active {
-    .reusecore__navbar {
-      background-color: ${themeGet('colors.white', '#ffffff')};
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      padding: 15px auto;
-      .reusecore__button {
-        color: ${themeGet('colors.primary', '#10ac84')};
+    .saas_navbar {
+      background: #fff;
+      box-shadow: 0px 3px 8px 0px rgba(43, 83, 135, 0.08);
+      padding: 15px 0;
+      .main-logo {
+        display: none;
+        color: white;
       }
-      .hamburgMenu__bar > span {
-        background-color: ${themeGet('colors.primary', '#10ac84')};
+      .logo-alt {
+        display: block;
+        color: black;
+        font-weight: bold;
+      }
+      .main_menu {
+        li {
+          a {
+            color: #000;
+            &:hover {
+              color: #2aa275;
+            }
+          }
+          &.is-current {
+            a {
+              color: #2aa275;
+            }
+          }
+        }
+      }
+    }
+    .hamburgMenu__bar {
+      > span {
+        background: #2aa275;
+      }
+    }
+  }
+
+  .saas_navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.35s ease-in-out;
+    padding: 30px 0;
+    .logo-alt {
+      display: none;
+    }
+    .main-logo {
+      display: block;
+      color: white;
+      font-weight: bold;
+    }
+    .main_menu {
+      margin-right: 40px;
+      li {
+        display: inline-block;
+        padding-left: 13px;
+        padding-right: 13px;
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+        &.is-current {
+          a {
+            color: #edcd37;
+          }
+        }
+        a {
+          padding: 5px;
+          font-size: 16px;
+          font-weight: 400;
+          color: #fff;
+          transition: 0.15s ease-in-out;
+          &:hover {
+            color: #edcd37;
+          }
+        }
+      }
+      @media (max-width: 990px) {
+        display: none;
+      }
+    }
+    .navbar_button {
+      @media (max-width: 990px) {
+        display: none;
+      }
+    }
+    .reusecore-drawer__handler {
+      @media (min-width: 991px) {
+        display: none !important;
+      }
+      .hamburgMenu__bar {
+        > span {
+        }
       }
     }
   }

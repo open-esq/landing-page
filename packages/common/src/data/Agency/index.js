@@ -70,45 +70,24 @@ const data = {
   features: [
     {
       id: 1,
-      icon: 'flaticon-flask',
-      title: 'Search Optimization',
+      icon: 'flaticon-group',
+      title: 'DAO Creation',
       description:
-        'By using Search Engine Optimization, You will get more Clients',
+        'We help organize your decentralized organization or startup in a legally compliant manner',
     },
     {
       id: 2,
-      icon: 'flaticon-pencil-case',
-      title: 'Ui/UX Design',
+      icon: 'flaticon-bitcoin',
+      title: 'Secondary Market Creation',
       description:
-        'We provide the best UI/UX Design by following the latest trends of the market .',
+        'We help tokenize claims to future earnings and provide a market for people to trade them',
     },
     {
       id: 3,
-      icon: 'flaticon-ruler',
-      title: 'Wireframing Task',
-      description:
-        'We respect our customer opinions and deals with them with perfect wireframing ',
-    },
-    {
-      id: 4,
       icon: 'flaticon-startup',
-      title: 'Business Solutions',
+      title: 'Startup Crowdfunding',
       description:
-        'We are commited to provide proper business solutions with reasonable pricing',
-    },
-    {
-      id: 5,
-      icon: 'flaticon-briefing',
-      title: 'Business Analysis',
-      description:
-        'A day to day report about your ongoing business for proper understanding',
-    },
-    {
-      id: 6,
-      icon: 'flaticon-creative',
-      title: 'Content Management',
-      description:
-        'Proper Content Management is important to find out the real clients for your agencies',
+        'We provide a portal to allow retail investors to crowdfund your startup',
     },
   ],
   qualityFeature: [

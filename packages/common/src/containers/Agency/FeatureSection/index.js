@@ -26,7 +26,7 @@ const FeatureSection = ({
         <Box {...sectionHeader}>
           <Text content="OUR SERVICES" {...sectionSubTitle} />
           <Heading
-            content="Featured Service that We Provide"
+            content="Featured Services that We Provide"
             {...sectionTitle}
           />
         </Box>
@@ -76,7 +76,7 @@ FeatureSection.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.15em',
     fontWeight: '700',
-    color: '#10ac84',
+    color: 'primary',
     mb: '10px',
   },
   // section title default style

@@ -49,8 +49,7 @@ export default () => {
           </Sticky>
           <BannerSection />
           <FeatureSection />
-          <AboutUsSection />
-          <WorkHistory />
+
           <BlogSection />
           <QualitySection />
           <VideoSection />

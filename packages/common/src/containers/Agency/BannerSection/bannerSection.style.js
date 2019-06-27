@@ -25,9 +25,9 @@ const BannerWrapper = styled.section`
   .particle {
     position: absolute;
     width: 50%;
-    height: 100%;
+    height: 50%;
     top: 0;
-    left: 0;
+    left: 50%;
     overflow: hidden;
     @media (max-width: 990px) {
       display: none;

@@ -1,6 +1,6 @@
-import BlogImage1 from '../../assets/image/agency/blog/blog-img1.png';
-import BlogImage2 from '../../assets/image/agency/blog/blog-img2.png';
-import BlogImage3 from '../../assets/image/agency/blog/blog-img3.png';
+import BlogImage1 from '../../assets/image/agency/blog/income-share.jpg';
+import BlogImage2 from '../../assets/image/agency/blog/term-sheet.jpg';
+import BlogImage3 from '../../assets/image/agency/blog/llc-dao.jpg';
 import Member1 from '../../assets/image/agency/team/member-1.jpg';
 import Member2 from '../../assets/image/agency/team/member-2.jpg';
 import Member3 from '../../assets/image/agency/team/member-3.jpg';
@@ -123,24 +123,24 @@ const data = {
   blog: [
     {
       id: 1,
-      title: 'Real home corporation',
+      title: 'Income Share Portal',
       thumbnail_url: BlogImage1,
-      date: 'November 02, 2018',
-      postLink: '#1',
+      date: 'enable legally enforceable income share agreements and trade them',
+      postLink: 'https://incomeshare.me',
     },
     {
       id: 2,
-      title: 'Sheltech developer ltd.',
+      title: 'Y-Combinator Termsheets.',
       thumbnail_url: BlogImage2,
-      date: 'November 12, 2018',
-      postLink: '#2',
+      date: 'connecting VCs and start-up founders',
+      postLink: 'https://termsheets.me',
     },
     {
       id: 3,
-      title: 'Alt architecture co.',
+      title: 'LLC-DAO',
       thumbnail_url: BlogImage3,
-      date: 'December 09, 2018',
-      postLink: '#3',
+      date: 'First ever LLC-DAO',
+      postLink: 'https://app.openlaw.io/template/DAO-LLC%20Operating%20Agreement%20(DAOscrow)',
     },
   ],
   teamMember: [

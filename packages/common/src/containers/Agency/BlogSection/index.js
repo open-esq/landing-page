@@ -24,7 +24,7 @@ const BlogSection = ({
         <Box {...sectionHeader}>
           <Text content="PORTFOLIO" {...sectionSubTitle} />
           <Heading
-            content="Meet our work experience from customers"
+            content="Check out some of our work"
             {...sectionTitle}
           />
         </Box>

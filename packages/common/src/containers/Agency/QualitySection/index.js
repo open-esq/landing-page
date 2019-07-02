@@ -36,7 +36,7 @@ const QualitySection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Our Quality feature that customers always prefer to use on their products."
+                  content="Some content here to describe more in detail what we do at Open Esquire."
                   {...title}
                 />
               }

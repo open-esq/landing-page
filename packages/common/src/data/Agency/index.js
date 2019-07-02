@@ -3,7 +3,7 @@ import BlogImage2 from '../../assets/image/agency/blog/term-sheet.jpg';
 import BlogImage3 from '../../assets/image/agency/blog/llc-dao.jpg';
 import Member1 from '../../assets/image/agency/team/member-1.jpg';
 import Member2 from '../../assets/image/agency/team/member-2.jpg';
-import Member3 from '../../assets/image/agency/team/member-3.jpg';
+import Member3 from '../../assets/image/agency/team/josh.jpg';
 import Denny from '../../assets/image/agency/client/denny.png';
 import Menny from '../../assets/image/agency/client/menny.png';
 
@@ -78,7 +78,7 @@ const data = {
     {
       id: 2,
       icon: 'flaticon-bitcoin',
-      title: 'Secondary Market Creation',
+      title: 'Secondary Markets',
       description:
         'We help tokenize claims to future earnings and provide a market for people to trade them',
     },
@@ -146,9 +146,9 @@ const data = {
   teamMember: [
     {
       id: 1,
-      name: 'Jessica Fanddy',
+      name: 'Ross Campbell',
       thumbnail_url: Member1,
-      designation: 'Co Founder',
+      designation: 'Co-founder/Legal Engineer',
       social_links: [
         'flaticon-facebook-logo',
         'flaticon-twitter-logo-silhouette',
@@ -158,9 +158,9 @@ const data = {
     },
     {
       id: 2,
-      name: 'Devid Justingul',
+      name: 'Robert Leonhard',
       thumbnail_url: Member2,
-      designation: 'Senior Ui/UX Designer',
+      designation: 'Co-founder/Legal Engineer',
       social_links: [
         'flaticon-twitter-logo-silhouette',
         'flaticon-instagram',
@@ -170,9 +170,9 @@ const data = {
     },
     {
       id: 3,
-      name: 'Handdy Albuzz',
+      name: 'Josh Ma',
       thumbnail_url: Member3,
-      designation: 'Article Writter',
+      designation: 'Co-founder/Legal Engineer',
       social_links: [
         'flaticon-dribble-logo',
         'flaticon-twitter-logo-silhouette',

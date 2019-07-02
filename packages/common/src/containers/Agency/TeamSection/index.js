@@ -23,9 +23,9 @@ const TeamSection = ({
     <TeamSectionWrapper id="teamSection">
       <Container>
         <Box {...sectionHeader}>
-          <Text content="TEAM MEMBER" {...sectionSubTitle} />
+          <Text content="TEAM" {...sectionSubTitle} />
           <Heading
-            content="Meet with team member behind scense"
+            content="Meet the team"
             {...sectionTitle}
           />
         </Box>
@@ -91,7 +91,7 @@ TeamSection.defaultProps = {
     fontSize: '14px',
     letterSpacing: '0.15em',
     fontWeight: '700',
-    color: '#10ac84',
+    color: 'primary',
     mb: '10px',
   },
   // section title default style

@@ -52,12 +52,8 @@ export default () => {
 
           <BlogSection />
           <QualitySection />
-          <VideoSection />
-          <TestimonialSection />
           <TeamSection />
-          <FaqSection />
           <NewsletterSection />
-          <Footer />
         </AgencyWrapper>
         {/* End of agency wrapper section */}
       </Fragment>

@@ -10,39 +10,29 @@ import Menny from '../../assets/image/agency/client/menny.png';
 const data = {
   menuItems: [
     {
-      label: 'Feature',
-      path: '#featureSection',
-      offset: '80',
+      label: 'Home',
+      path: '#banner_section',
+      offset: '0',
     },
     {
-      label: 'Work History',
-      path: '#workHistorySection',
-      offset: '100',
+      label: 'Services',
+      path: '#feature_section',
+      offset: '0',
     },
     {
       label: 'Portfolio',
       path: '#blogSection',
-      offset: '100',
+      offset: '0',
     },
     {
-      label: 'Quality feature',
-      path: '#qualitySection',
-      offset: '100',
-    },
-    {
-      label: 'Testimonial',
-      path: '#testimonialSection',
-      offset: '100',
-    },
-    {
-      label: 'Team Member',
+      label: 'Team',
       path: '#teamSection',
-      offset: '67',
+      offset: '0',
     },
     {
-      label: 'FAQ',
-      path: '#faqSection',
-      offset: '100',
+      label: 'Contact',
+      path: '#contactSection',
+      offset: '0',
     },
   ],
   aboutus: [

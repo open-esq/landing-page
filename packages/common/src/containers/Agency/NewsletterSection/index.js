@@ -17,7 +17,7 @@ const ContactSection = ({
   buttonWrapper
 }) => {
   return (
-    <Box {...sectionWrapper} as="section">
+    <Box {...sectionWrapper} as="section" id="contactSection">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
           <Heading {...secTitle} content="Let’s Work Together" />

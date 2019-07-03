@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import Link from 'next/link'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
 import Heading from 'reusecore/src/elements/Heading';
@@ -21,11 +23,14 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
+      <AnchorLink href="#contactSection">
       <Button
-        title="VIEW PROJECTS"
+        title="GET IN TOUCH"
         icon={<i className="flaticon-next" />}
         {...btnStyle}
       />
+      </AnchorLink>
+
     </Fragment>
   );
   return (

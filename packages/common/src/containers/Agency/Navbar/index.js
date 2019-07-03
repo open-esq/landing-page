@@ -10,11 +10,8 @@ import HamburgMenu from '../../../components/HamburgMenu';
 import Container from '../../../components/UI/Container';
 import { DrawerContext } from '../../../contexts/DrawerContext';
 
-import { MENU_ITEMS } from '../../../data/SaasTwo';
+import data from '../../../data/Agency';
 import ScrollSpyMenu from '../../../components/ScrollSpyMenu';
-
-import LogoImage from '../../../assets/image/saasTwo/logo-white.png';
-import LogoImageAlt from '../../../assets/image/saasTwo/logo.png';
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -45,14 +42,9 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
           <Box {...menuWrapper}>
             <ScrollSpyMenu
               className="main_menu"
-              menuItems={MENU_ITEMS}
+              menuItems={data.menuItems}
               offset={-70}
             />
-            <Link href="#">
-              <a className="navbar_button">
-                <Button {...button} title="GET STARTED" />
-              </a>
-            </Link>
             <Drawer
               width="420px"
               placement="right"
@@ -62,15 +54,10 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             >
               <ScrollSpyMenu
                 className="mobile_menu"
-                menuItems={MENU_ITEMS}
+                menuItems={data.menuItems}
                 drawerClose={true}
                 offset={-100}
               />
-              <Link href="#">
-                <a className="navbar_drawer_button">
-                  <Button {...button} title="GET STARTED" />
-                </a>
-              </Link>
             </Drawer>
           </Box>
         </Box>

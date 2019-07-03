@@ -194,12 +194,12 @@ const AgencyWrapper = styled.div`
           a {
             color: #000;
             &:hover {
-              color: #2aa275;
+              color: primary;
             }
           }
           &.is-current {
             a {
-              color: #2aa275;
+              color: primary;
             }
           }
         }
@@ -207,7 +207,7 @@ const AgencyWrapper = styled.div`
     }
     .hamburgMenu__bar {
       > span {
-        background: #2aa275;
+        background: primary;
       }
     }
   }

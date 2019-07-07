@@ -77,37 +77,37 @@ const data = {
       icon: 'flaticon-startup',
       title: 'Startup Crowdfunding',
       description:
-        'We provide a portal to allow retail investors to crowdfund your startup',
+        'We provide a portal to allow retail investors to crowdfund your startup. COMING SOON ON PRIMAL.',
     },
   ],
   qualityFeature: [
     {
       id: 1,
       icon: 'flaticon-flask',
-      title: 'Search Optimization',
+      title: 'Tokenization',
       description:
-        'By using Search Engine Optimization, You will get more Clients.',
+        "We'll upload your assets to the Ethereum blockchain using customized tokenization solutions.",
     },
     {
       id: 2,
       icon: 'flaticon-pencil-case',
-      title: 'Wireframing Task',
+      title: 'Business Re-tooling',
       description:
-        'We respect our customer opinions and deals with them with perfect wireframing.',
+        "We'll reboot your business to take advantage of open finance tools on Ethereum, like forming limited liability DAOs, deploying smart contracts, and launching custom dApps.",
     },
     {
       id: 3,
       icon: 'flaticon-ruler',
-      title: 'Ui/Ux Design',
+      title: 'Workflow Design',
       description:
-        'We provide the best UI/UX Design by following the latest trends of the market .',
+        "We'll consult on and design more efficient ways to accomplish your business and legal workflow with smart deal templates on OpenLaw.",
     },
     {
       id: 4,
       icon: 'flaticon-briefing',
-      title: 'Content Writting',
+      title: 'Project Diligence',
       description:
-        'Proper Content Management is important to find out the real clients for your agencies .',
+        "We'll review your proposed retail token sale for adherence to the Consumer Token Framework as well as provide other content and technical diligence reviews.",
     },
   ],
   blog: [
@@ -129,7 +129,7 @@ const data = {
       id: 3,
       title: 'LLC-DAO',
       thumbnail_url: BlogImage3,
-      date: 'First ever LLC-DAO',
+      date: 'First ever Limited Liability DAO',
       postLink: 'https://app.openlaw.io/template/DAO-LLC%20Operating%20Agreement%20(DAOscrow)',
     },
   ],

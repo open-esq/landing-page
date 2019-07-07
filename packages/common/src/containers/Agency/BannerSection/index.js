@@ -9,7 +9,7 @@ import Button from 'reusecore/src/elements/Button';
 import FeatureBlock from '../../../components/FeatureBlock';
 import Container from '../../../components/UI/Container';
 import Particles from '../Particle';
-import BannerWrapper, { DiscountLabel } from './bannerSection.style';
+import BannerWrapper, { DiscountLabel } from './bannerSection.style.js';
 
 const BannerSection = ({
   row,
@@ -48,7 +48,7 @@ const BannerSection = ({
               }
               description={
                 <Text
-                  content="We're a group of legal engineers building legal solutions on the Ethereum Blockchain. It's time to cut the bloat and see how we're shaking up the legal industry."
+                  content="We're a group of legal engineers building business solutions on the Ethereum Blockchain. It's time to cut the bloat and see how we're shaking up the legal industry."
                   {...description}
                 />
               }

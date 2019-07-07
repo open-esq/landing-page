@@ -12,7 +12,7 @@ import QualitySectionWrapper from './qualitySection.style';
 
 import data from '../../../data/Agency';
 
-import FeatureImage from '../../../assets/image/agency/surface-studio.png';
+import FeatureImage from '../../../assets/image/agency/ethereum.jpg';
 
 const QualitySection = ({
   row,
@@ -36,13 +36,13 @@ const QualitySection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Some content here to describe more in detail what we do at Open Esquire."
+                  content="Open Esquire reprograms organizations and their legal assets on Ethereum."
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Customers are our first priority and we provide some exceptional features that our customer prefers . That's why our customers never leave us ."
+                  content="Organizational programming is our obsession."
                   {...description}
                 />
               }
@@ -74,7 +74,7 @@ const QualitySection = ({
           <Box className="col" {...col} {...imageArea}>
             <Card {...imageWrapper}>
               <Fade right delay={90}>
-                <Image src={FeatureImage} alt="Feature Image" />
+                <Image style={{paddingRight:"75px"}} src={FeatureImage} alt="Feature Image" />
               </Fade>
             </Card>
           </Box>

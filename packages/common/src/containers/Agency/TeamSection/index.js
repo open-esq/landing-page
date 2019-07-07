@@ -40,7 +40,7 @@ const TeamSection = ({
                     src={member.thumbnail_url}
                     alt={`Team member photo ${member.id}`}
                     className="member__photo"
-                    style={{height:"400px", width:"400px",objectFit:"cover"}}
+                    style={{width:"100%", height:"100%",objectFit:"contain"}}
                   />
                 }
                 contentStyle={contentStyle}

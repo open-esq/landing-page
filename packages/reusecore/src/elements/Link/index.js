@@ -24,5 +24,6 @@ Link.propTypes = {
 Link.defaultProps = {
   as: 'a',
   m: 0,
-  display: 'inline-block'
+  display: 'inline-block',
+  target: '_'
 };

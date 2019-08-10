@@ -48,10 +48,9 @@ export default () => {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
-          <FeatureSection />
-
-          <BlogSection />
           <QualitySection />
+          <BlogSection />
+          
           <TeamSection />
           <NewsletterSection />
         </AgencyWrapper>

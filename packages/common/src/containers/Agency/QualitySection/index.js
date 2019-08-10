@@ -29,14 +29,14 @@ const QualitySection = ({
   iconStyle,
 }) => {
   return (
-    <QualitySectionWrapper id="qualitySection">
+    <QualitySectionWrapper id="feature_section">
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col} {...textArea}>
             <FeatureBlock
               title={
                 <Heading
-                  content="Open Esquire reprograms organizations and their legal assets on Ethereum."
+                  content="Open Esquire reprograms organizations using Ethereum & OpenLaw"
                   {...title}
                 />
               }

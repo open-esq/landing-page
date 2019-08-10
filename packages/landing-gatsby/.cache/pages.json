@@ -1,0 +1,72 @@
+[
+    {
+        "componentChunkName": "component---src-pages-index-js",
+        "jsonName": "index",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-js",
+        "jsonName": "404-html-516",
+        "path": "/404.html"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-js",
+        "jsonName": "404-22d",
+        "path": "/404/"
+    },
+    {
+        "componentChunkName": "component---src-pages-agency-js",
+        "jsonName": "agency-996",
+        "path": "/agency/"
+    },
+    {
+        "componentChunkName": "component---src-pages-app-js",
+        "jsonName": "app-f4d",
+        "path": "/app/"
+    },
+    {
+        "componentChunkName": "component---src-pages-crypto-js",
+        "jsonName": "crypto-80a",
+        "path": "/crypto/"
+    },
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-hosting-js",
+        "jsonName": "hosting-203",
+        "path": "/hosting/"
+    },
+    {
+        "componentChunkName": "component---src-pages-page-2-js",
+        "jsonName": "page-2-fbc",
+        "path": "/page-2/"
+    },
+    {
+        "componentChunkName": "component---src-pages-portfolio-js",
+        "jsonName": "portfolio-964",
+        "path": "/portfolio/"
+    },
+    {
+        "componentChunkName": "component---src-pages-ride-js",
+        "jsonName": "ride-15b",
+        "path": "/ride/"
+    },
+    {
+        "componentChunkName": "component---src-pages-saas-js",
+        "jsonName": "saas-970",
+        "path": "/saas/"
+    },
+    {
+        "componentChunkName": "component---src-pages-saasclassic-js",
+        "jsonName": "saasclassic-a2d",
+        "path": "/saasclassic/"
+    },
+    {
+        "componentChunkName": "component---src-pages-saasmodern-js",
+        "jsonName": "saasmodern-7c7",
+        "path": "/saasmodern/"
+    }
+]

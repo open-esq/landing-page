@@ -84,7 +84,7 @@ const data = {
     {
       id: 1,
       icon: 'flaticon-flask',
-      title: 'Tokenization',
+      title: 'Tokenization & Secondary Markets',
       description:
         "We'll upload your assets to the Ethereum blockchain using customized tokenization solutions.",
     },

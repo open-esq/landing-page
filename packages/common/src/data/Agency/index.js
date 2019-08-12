@@ -25,14 +25,72 @@ const data = {
       offset: '0',
     },
     {
+      label: 'Pricing',
+      path: "#pricing_section",
+      offset: '0',
+    },
+    {
       label: 'Team',
       path: '#teamSection',
       offset: '0',
     },
+
     {
       label: 'Contact',
       path: '#contactSection',
       offset: '0',
+    },
+  ],
+  pricingTable: [
+    {
+      name: 'Smart OpenLaw Agreement',
+      description: "Convert your existing contract into a smart legal agreement that can be electronically signed using email and MetaMask",
+      price: '$20/page',
+      priceLabel: 'Per month & subscription yearly',
+      buttonLabel: 'Get in Touch',
+      url: '#contactSection',
+      listItems: [
+        {
+          content: 'Drag & Drop Builder',
+        },
+        {
+          content: '1,000s of Templates Ready',
+        },
+        {
+          content: 'Blog Tools',
+        },
+        {
+          content: 'eCommerce Store ',
+        },
+        {
+          content: '30+ Webmaster Tools',
+        },
+      ],
+    },
+    {
+      name: 'Technical Consultation',
+      description: 'Hire us for a technical consultation on your OpenLaw project',
+      price: '$325/hr',
+      priceLabel: 'Per month & subscription yearly',
+      buttonLabel: 'Get in Touch',
+      url: '#contactSection',
+      listItems: [
+        {
+          content: 'Drag & Drop Builder',
+        },
+        {
+          content: '1,000s of Templates Ready',
+        },
+        {
+          content: 'Blog Tools',
+        },
+        {
+          content: 'eCommerce Store ',
+        },
+        {
+          content: '30+ Webmaster Tools',
+        },
+      ],
     },
   ],
   aboutus: [

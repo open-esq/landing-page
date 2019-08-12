@@ -15,6 +15,7 @@ import AboutUsSection from 'common/src/containers/Agency/AboutUsSection';
 import WorkHistory from 'common/src/containers/Agency/WorkHistory';
 import BlogSection from 'common/src/containers/Agency/BlogSection';
 import TestimonialSection from 'common/src/containers/Agency/TestimonialSection';
+import PricingSection from 'common/src/containers/Agency/Pricing'
 import TeamSection from 'common/src/containers/Agency/TeamSection';
 import VideoSection from 'common/src/containers/Agency/VideoSection';
 import NewsletterSection from 'common/src/containers/Agency/NewsletterSection';
@@ -50,6 +51,7 @@ export default () => {
           <BannerSection />
           <QualitySection />
           <BlogSection />
+          <PricingSection/>
           
           <TeamSection />
           <NewsletterSection />
